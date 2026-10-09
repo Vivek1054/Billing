@@ -376,6 +376,58 @@
   .badge.pending{background:var(--warning-bg);color:var(--warning-text);border-color:var(--warning-border)}
   .badge.refunded{background:var(--info-bg);color:var(--info-text);border-color:var(--info-border)}
   .badge.processing{background:var(--info-bg);color:var(--info-text);border-color:var(--info-border)}
+  .dpb-row-actions{display:flex;align-items:center;gap:4px}
+  .dpb-icon-btn{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:var(--r-sm);color:var(--muted);transition:background var(--t-fast) var(--ease),color var(--t-fast) var(--ease)}
+  .dpb-icon-btn svg{width:14px;height:14px}
+  .dpb-icon-btn:hover{background:var(--surface-sunken);color:var(--text)}
+  .dpb-icon-btn.danger:hover{background:var(--danger-bg);color:var(--danger-text)}
+  .dpb-danger-link{color:var(--danger-text)}
+  .dpb-toolbar-row{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+  .dpb-grid{display:grid;grid-template-columns:2fr 1fr;gap:14px;min-width:0}
+  .dpb-col-main,.dpb-col-side{display:flex;flex-direction:column;gap:14px;min-width:0}
+  @media(max-width:980px){.dpb-grid{grid-template-columns:1fr}}
+  .dpb-trend{display:inline-flex;align-items:center;gap:2px;padding:2px 7px;border-radius:var(--r-full);font-size:11px;font-weight:700;vertical-align:middle}
+  .dpb-trend.good{background:var(--success-bg);color:var(--success-text)}
+  .dpb-trend.bad{background:var(--danger-bg);color:var(--danger-text)}
+  .dpb-info-ico{font-size:12px;color:var(--muted);cursor:help;font-weight:400}
+  .dpb-credit-row{display:flex;gap:16px;flex-wrap:wrap;align-items:stretch}
+  .dpb-credit-row>div:first-child{flex:1;min-width:200px}
+  .dpb-credit-value{font-size:26px;font-weight:700;color:var(--text)}
+  .dpb-credit-label{font-size:13px;font-weight:600;color:var(--muted)}
+  .dpb-alert-box{flex:1;min-width:220px;background:var(--danger-bg);border:1px solid var(--danger-border);border-radius:var(--r-lg);padding:12px 14px}
+  .dpb-alert-head{display:flex;align-items:center;gap:8px;color:var(--danger-text);margin-bottom:4px}
+  .dpb-alert-ico{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--danger-text);color:#fff;font-size:11px;font-weight:800;flex:none}
+  .dpb-alert-box p{margin:0 0 10px;font-size:12.5px;color:var(--danger-text)}
+  .dpb-ao-icon{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:8px;flex:none}
+  .dpb-ao-icon svg{width:14px;height:14px}
+  .dpb-ao-icon.blue{background:var(--blue-100);color:var(--blue-dark)}
+  .dpb-ao-icon.green{background:var(--success-bg);color:var(--success-text)}
+  .dpb-ao-icon.purple{background:#f0e8fd;color:#7c4fe0}
+  .dpb-brand{display:inline-flex;align-items:center;justify-content:center;width:36px;height:22px;border-radius:4px;font-size:9px;font-weight:800;letter-spacing:.3px;color:#fff;flex:none}
+  .dpb-brand.visa{background:#1434cb}
+  .dpb-brand.mc{background:linear-gradient(90deg,#eb001b 50%,#f79e1b 50%)}
+  .dpb-menu-wrap{position:relative;display:inline-block}
+  .dpb-menu{position:absolute;right:0;top:calc(100% + 4px);background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);box-shadow:var(--shadow-lg);min-width:140px;z-index:20;overflow:hidden;text-align:left}
+  .dpb-menu button{display:block;width:100%;text-align:left;padding:9px 12px;font-size:12.5px;color:var(--text-secondary)}
+  .dpb-menu button:hover{background:var(--surface-sunken);color:var(--text)}
+  .dpb-menu button.danger:hover{background:var(--danger-bg);color:var(--danger-text)}
+  .dpb-donut-wrap{display:flex;justify-content:center;padding:4px 0 10px}
+  .dpb-donut{width:116px;height:116px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+  .dpb-donut-hole{width:74px;height:74px;border-radius:50%;background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+  .dpb-donut-pct{font-size:15px;font-weight:700;color:var(--text);line-height:1.2}
+  .dpb-donut-amt{font-size:11px;font-weight:650;color:var(--text);line-height:1.3}
+  .dpb-donut-sub{font-size:9.5px;color:var(--muted)}
+  .dpb-legend-row{display:flex;align-items:center;gap:8px;padding:5px 0;font-size:12.5px}
+  .dpb-dot{width:9px;height:9px;border-radius:50%;flex:none}
+  .dpb-legend-label{flex:1;color:var(--text-secondary);min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dpb-legend-amt{color:var(--text);font-weight:600;font-variant-numeric:tabular-nums}
+  .dpb-legend-pct{color:var(--muted);width:32px;text-align:right;font-variant-numeric:tabular-nums}
+  .dpb-segmented{display:inline-flex;background:var(--surface-sunken);border-radius:var(--r-sm);padding:3px;gap:2px}
+  .dpb-segmented button{height:28px;padding:0 12px;border-radius:6px;font-size:12px;font-weight:600;color:var(--muted)}
+  .dpb-segmented button.active{background:var(--surface);color:var(--text);box-shadow:var(--shadow-sm)}
+  .dpb-filter-row{display:flex;align-items:flex-end;gap:8px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid var(--line)}
+  .dpb-filter-row .bx-field{margin:0}
+  .dpb-spark{display:block;width:100%;height:26px;margin-top:6px;opacity:.85}
   .pay-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px}
   .pay-row h3{margin:0 0 2px;font-size:var(--fs-lg);color:var(--text);font-weight:650;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
   .pay-row p{margin:0;font-size:12px;color:var(--muted)}
@@ -1168,7 +1220,9 @@
                 <h2 id="dpbTitle">Billing Summary</h2>
                 <p id="dpbBlurb">Dialpad-style billing — a separate, lightweight view from the main Billing module.</p>
               </div>
+              <div id="dpbHeadActs"></div>
             </div>
+            <div class="tabs" id="dpbTabs" style="display:none"></div>
           </div>
           <div class="bill-wrap" id="dpbBody"></div>
         </div>
@@ -1266,15 +1320,66 @@
   // ---- Billing (Dialpad) — a small, separate, self-contained, interactive billing view ----
   const dpbEsc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const dpbMoney=n=>'$'+n.toFixed(2);
+  function dpbSparkline(values,color){
+    const w=100,h=26,pad=2;
+    const max=Math.max(...values),min=Math.min(...values),range=(max-min)||1;
+    const pts=values.map((v,i)=>{
+      const x=pad+i*(w-2*pad)/Math.max(1,values.length-1);
+      const y=h-pad-((v-min)/range)*(h-2*pad);
+      return x.toFixed(1)+','+y.toFixed(1);
+    }).join(' ');
+    return '<svg class="dpb-spark" viewBox="0 0 '+w+' '+h+'" preserveAspectRatio="none" aria-hidden="true"><polyline points="'+pts+'" fill="none" stroke="'+color+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  }
   const dpbData={
     cards:[
       {id:'c1',brand:'Visa',last4:'4242',exp:'09/28',role:'default'},
       {id:'c2',brand:'Mastercard',last4:'8891',exp:'02/27',role:'backup'}
     ],
     addons:[
-      {name:'Unlimited Domestic Calling',qty:10,unit:12.00,sub:120.00},
-      {name:'AI Recaps & Transcription',qty:10,unit:9.60,sub:96.00},
-      {name:'Business SMS',qty:5,unit:5.00,sub:25.00}
+      {name:'Unlimited Domestic Calling',desc:'Unlimited calling within US/CA',qty:10,unit:12.00,sub:120.00,icon:'phone',color:'blue'},
+      {name:'AI Recaps & Transcription',desc:'AI meeting recaps &amp; transcripts',qty:10,unit:9.60,sub:96.00,icon:'ai',color:'purple'},
+      {name:'Business SMS',desc:'Outbound and inbound SMS',qty:5,unit:5.00,sub:25.00,icon:'sms',color:'green'}
+    ],
+    monthlySpend:{
+      six:[['May',880.40],['Jun',910.10],['Jul',1050.60],['Aug',980.30],['Sep',1120.00],['Oct',958.20]],
+      three:[['Aug',980.30],['Sep',1120.00],['Oct',958.20]]
+    },
+    usageBreakdown:[
+      {label:'Calling',amount:420.00,color:'#0969e8'},
+      {label:'AI Recaps & Transcription',amount:310.00,color:'#7c4fe0'},
+      {label:'Business SMS',amount:125.00,color:'#0c7a4e'},
+      {label:'Other',amount:103.20,color:'#b3730c'}
+    ],
+    recentActivity:[
+      ['Oct 08, 2026','Add-on purchase: AI Recaps','$96.00','Completed'],
+      ['Oct 05, 2026','Payment failed (Visa •••• 4242)','$50.00','Failed'],
+      ['Oct 01, 2026','Monthly charge','$1,102.20','Completed']
+    ],
+    creditAllocation:[
+      {label:'Plan credit',amount:300.00,color:'#0969e8'},
+      {label:'Add-on credit',amount:150.00,color:'#7c4fe0'},
+      {label:'Adjustments',amount:50.00,color:'#0c7a4e'}
+    ],
+    recentCreditUsage:[
+      ['Oct 08, 2026','Calling','Outbound calls','120 min','$24.00'],
+      ['Oct 07, 2026','AI Recaps','Transcript processing','25 files','$18.50'],
+      ['Oct 06, 2026','SMS','Outbound messages','200 msgs','$12.00'],
+      ['Oct 05, 2026','Other','AI agent usage','1,250 credits','$10.30']
+    ],
+    paymentSettings:{autoPay:true,failureNotify:true,delivery:'Email (PDF)',email:'billing@company.com'},
+    invoices:[
+      {num:'INV-2026-10',date:'Oct 01, 2026',period:'Sep 30 – Oct 30',amount:1102.20,status:'Paid',pm:'Visa •••• 4242'},
+      {num:'INV-2026-09',date:'Sep 01, 2026',period:'Aug 30 – Sep 30',amount:1045.60,status:'Paid',pm:'Mastercard •••• 8891'},
+      {num:'INV-2026-08',date:'Aug 01, 2026',period:'Jul 30 – Aug 30',amount:980.30,status:'Paid',pm:'Visa •••• 4242'},
+      {num:'INV-2026-07',date:'Jul 01, 2026',period:'Jun 30 – Jul 30',amount:1120.00,status:'Paid',pm:'Mastercard •••• 8891'},
+      {num:'INV-2026-06',date:'Jun 01, 2026',period:'May 30 – Jun 30',amount:1082.10,status:'Paid',pm:'Visa •••• 4242'},
+      {num:'INV-2026-05',date:'May 01, 2026',period:'Apr 30 – May 30',amount:1151.90,status:'Failed',pm:'Mastercard •••• 8891'},
+      {num:'INV-2026-04',date:'Apr 01, 2026',period:'Mar 30 – Apr 30',amount:998.40,status:'Paid',pm:'Visa •••• 4242'},
+      {num:'INV-2026-03',date:'Mar 01, 2026',period:'Feb 28 – Mar 30',amount:1015.75,status:'Paid',pm:'Mastercard •••• 8891'},
+      {num:'INV-2026-02',date:'Feb 01, 2026',period:'Jan 30 – Feb 28',amount:960.00,status:'Paid',pm:'Visa •••• 4242'},
+      {num:'INV-2026-01',date:'Jan 01, 2026',period:'Dec 30 – Jan 30',amount:940.50,status:'Paid',pm:'Visa •••• 4242'},
+      {num:'INV-2025-12',date:'Dec 01, 2025',period:'Nov 30 – Dec 30',amount:905.20,status:'Paid',pm:'Mastercard •••• 8891'},
+      {num:'INV-2025-11',date:'Nov 01, 2025',period:'Oct 30 – Nov 30',amount:875.90,status:'Paid',pm:'Visa •••• 4242'}
     ],
     wallets:[
       {id:'w1',name:'Dialpad Credits',balance:142.50,cap:300,status:'Healthy'},
@@ -1364,7 +1469,8 @@
       {title:'Refund policy',body:'Unused prepaid credits are refundable within 30 days of purchase. Billing errors are corrected within 2 billing cycles. No refunds are issued for consumed services.'}
     ]
   };
-  const dpbUi={tab:{summary:'current',credits:'wallets'},usageQ:'',usageType:'all',policyOpen:{},ccOpen:{}};
+  const dpbUi={tab:{summary:'current',credits:'wallets'},usageQ:'',usageType:'all',policyOpen:{},ccOpen:{},spendRange:'six',addonMenuOpen:null,summaryUsageView:'service',inv:{q:'',status:'all',pm:'all',from:'',to:'',page:1}};
+  const dpbInvPageSize=6;
 
   function dpbToast(msg,type){
     let box=document.querySelector('.bx-toasts');
@@ -1392,37 +1498,183 @@
   }
 
   function dpbAddonsTotal(){return dpbData.addons.reduce((s,a)=>s+a.sub,0);}
+  const DPB_SUMMARY_TABS=[['current','Current billing'],['credits','Credits & usage'],['payment','Payment methods'],['history','Invoice history']];
+  function dpbSummaryTabsHtml(){
+    return DPB_SUMMARY_TABS.map(t=>'<button type="button" class="tab'+(dpbUi.tab.summary===t[0]?' active':'')+'" data-dact="sum.tab" data-v="'+t[0]+'">'+t[1]+'</button>').join('');
+  }
   function dpbSummaryBody(){
-    const tabs='<div class="tabs" style="margin:0 18px"><button type="button" class="tab'+(dpbUi.tab.summary==='current'?' active':'')+'" data-dact="sum.tab" data-v="current">Current billing</button><button type="button" class="tab'+(dpbUi.tab.summary==='history'?' active':'')+'" data-dact="sum.tab" data-v="history">Invoice history</button></div>';
-    if(dpbUi.tab.summary==='history'){
-      const rows=[
-        ['INV-3301','30 Sep – 30 Oct','$1,331.50','Paid'],
-        ['INV-3214','30 Aug – 30 Sep','$1,298.20','Paid'],
-        ['INV-3109','30 Jul – 30 Aug','$1,298.20','Paid'],
-        ['INV-3002','30 Jun – 30 Jul','$1,215.40','Failed']
-      ];
-      return tabs+'<div class="bill-card-body"><div class="table-scroll"><table class="bill-table" style="min-width:620px"><thead><tr><th>Invoice #</th><th>Period</th><th class="num">Amount</th><th>Status</th><th>Actions</th></tr></thead><tbody>'
-        +rows.map(r=>'<tr><td>'+r[0]+'</td><td>'+r[1]+'</td><td class="num">'+r[2]+'</td><td><span class="badge '+(r[3]==='Paid'?'paid':'failed')+'">'+r[3]+'</span></td><td><a href="#" data-dact="sum.pdf" data-id="'+r[0]+'" onclick="return false">View PDF</a></td></tr>').join('')
-        +'</tbody></table></div></div>';
-    }
-    const addonRows=dpbData.addons.map(a=>'<tr><td class="main-cell"><b>'+dpbEsc(a.name)+'</b></td><td>'+a.qty+'</td><td class="num">'+dpbMoney(a.unit)+'</td><td class="num">'+dpbMoney(a.sub)+'</td></tr>').join('');
-    const cardRows=dpbData.cards.map(c=>'<tr><td class="main-cell"><b>'+c.brand+' &middot;&middot;&middot;&middot; '+c.last4+'</b></td><td>'+c.exp+'</td><td><span class="badge '+(c.role==='default'?'paid':'pending')+'">'+(c.role==='default'?'Default':'Backup')+'</span></td><td>'
-      +(c.role==='default'?'':'<a href="#" data-dact="pm.setDefault" data-id="'+c.id+'" onclick="return false">Set default</a> &middot; ')
-      +'<a href="#" data-dact="pm.remove" data-id="'+c.id+'" onclick="return false">Remove</a></td></tr>').join('');
-    return tabs+'<div class="bill-card-body"><div class="kpis">'
-      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-blue"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div class="kpi-text"><div class="k-label">NEXT BILL ESTIMATE</div><div class="k-value">$1,331.50</div></div></div><div class="k-sub">Includes current add-ons</div></div>'
-      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-green"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div class="kpi-text"><div class="k-label">NEXT BILL DATE</div><div class="k-value">31 Oct 2026</div></div></div><div class="k-sub">Card on file is charged</div></div>'
-      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-purple"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div><div class="kpi-text"><div class="k-label">BILLING PERIOD</div><div class="k-value">30 Sep &ndash; 30 Oct</div></div></div><div class="k-sub">Billed every month</div></div>'
-      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-orange"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div class="kpi-text"><div class="k-label">LICENCES</div><div class="k-value">8 of 9</div></div></div><div class="k-sub">1 spare seat</div></div>'
-      +'</div></div>'
-      +'<div class="bill-card-head" style="border-top:1px solid var(--line)"><div><h3>Credit balance</h3><p>Shared company credit available for charges beyond the plan.</p></div></div>'
-      +'<div class="bill-card-body" style="padding-top:0"><div class="p-row" style="padding:0;border-top:0"><div class="p-l"><b>$74.42 available</b><span>Shared across the company</span></div><span class="badge failed">$50.00 failed &mdash; retry needed</span></div></div>'
-      +'<div class="bill-card-head" style="border-top:1px solid var(--line)"><div><h3>Add-ons</h3><p>Active add-ons applied to this bill.</p></div></div>'
-      +'<div class="table-scroll"><table class="bill-table" style="min-width:480px"><thead><tr><th>Add-on</th><th>Qty</th><th class="num">Unit price</th><th class="num">Subtotal</th></tr></thead><tbody>'+addonRows
-      +'<tr><td colspan="3" style="text-align:right;font-weight:650;color:var(--text)">Total add-ons</td><td class="num" style="font-weight:650;color:var(--text)">'+dpbMoney(dpbAddonsTotal())+'</td></tr>'
+    if(dpbUi.tab.summary==='history') return dpbInvoiceHistoryTab();
+    if(dpbUi.tab.summary==='credits') return dpbCreditsUsageTab();
+    if(dpbUi.tab.summary==='payment') return dpbPaymentMethodsTab();
+    return dpbCurrentBillingTab();
+  }
+  function dpbCurrentBillingTab(){
+    const dpbAoIcons={phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+      ai:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
+      sms:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>'};
+    const addonRows=dpbData.addons.map(a=>{
+      const open=dpbUi.addonMenuOpen===a.name;
+      return '<tr><td class="main-cell"><div style="display:flex;align-items:center;gap:10px"><span class="dpb-ao-icon '+a.color+'">'+dpbAoIcons[a.icon]+'</span><b>'+dpbEsc(a.name)+'</b></div></td><td style="color:var(--muted)">'+a.desc+'</td><td>'+a.qty+'</td><td class="num">'+dpbMoney(a.unit)+'</td><td class="num">'+dpbMoney(a.sub)+'</td><td><span class="badge paid">Active</span></td><td style="text-align:right"><div class="dpb-menu-wrap">'
+        +'<button type="button" class="dpb-icon-btn" data-dact="ao.menu" data-name="'+dpbEsc(a.name)+'" aria-label="Actions for '+dpbEsc(a.name)+'" aria-expanded="'+open+'">&#8942;</button>'
+        +(open?'<div class="dpb-menu"><button type="button" data-dact="ao.manage" data-name="'+dpbEsc(a.name)+'">Manage</button><button type="button" class="danger" data-dact="ao.remove" data-name="'+dpbEsc(a.name)+'">Remove</button></div>':'')
+        +'</div></td></tr>';
+    }).join('');
+    const dpbBrand=c=>c.brand==='Visa'?'<span class="dpb-brand visa">VISA</span>':'<span class="dpb-brand mc">MC</span>';
+    const cardRows=dpbData.cards.map(c=>'<tr><td class="main-cell"><div style="display:flex;align-items:center;gap:10px">'+dpbBrand(c)+'<b>'+c.brand+' &middot;&middot;&middot;&middot; '+c.last4+'</b></div></td><td>'+c.exp+'</td><td><span class="badge '+(c.role==='default'?'paid':'pending')+'">'+(c.role==='default'?'Default':'Backup')+'</span></td><td style="text-align:right;white-space:nowrap">'
+      +'<a href="#" data-dact="pm.edit" data-id="'+c.id+'" onclick="return false">Edit</a>'
+      +(c.role==='default'?'':' &middot; <a href="#" data-dact="pm.setDefault" data-id="'+c.id+'" onclick="return false">Set default</a>')
+      +' &middot; <a href="#" class="dpb-danger-link" data-dact="pm.remove" data-id="'+c.id+'" onclick="return false">Remove</a></td></tr>').join('');
+    const estimateTrend=dpbData.monthlySpend.six.map(d=>d[1]);
+    const licenceTrend=[6,7,7,8,8,8];
+    const flatTrend=[1,1,1,1,1,1];
+    const overviewCard='<div class="card"><div class="bill-card-head"><div><h3>Billing overview</h3><p>Review your upcoming charge, billing cycle, and current licence allocation.</p></div></div>'
+      +'<div class="bill-card-body"><div class="kpis">'
+      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-blue"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div class="kpi-text"><div class="k-label">NEXT BILL ESTIMATE</div><div class="k-value">$1,331.50 <span class="dpb-trend bad">&#8593; 12%</span></div></div></div><div class="k-sub">Includes current add-ons</div>'+dpbSparkline(estimateTrend,'#0969e8')+'</div>'
+      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-green"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div class="kpi-text"><div class="k-label">NEXT BILL DATE</div><div class="k-value">31 Oct 2026</div></div></div><div class="k-sub">Card on file is charged</div>'+dpbSparkline(flatTrend,'#0c7a4e')+'</div>'
+      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-purple"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div><div class="kpi-text"><div class="k-label">BILLING PERIOD</div><div class="k-value">30 Sep &ndash; 30 Oct</div></div></div><div class="k-sub">Billed every month</div>'+dpbSparkline(flatTrend,'#7c4fe0')+'</div>'
+      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-orange"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div class="kpi-text"><div class="k-label">LICENCES</div><div class="k-value">8 of 9</div></div></div><div class="k-sub">1 spare seat</div>'+dpbSparkline(licenceTrend,'#b3730c')+'</div>'
+      +'</div></div></div>';
+    const creditCard='<div class="card"><div class="bill-card-head"><div><h3>Credit balance <span class="dpb-info-ico" title="Shared company credit, available to all users for charges beyond the plan">&#9432;</span></h3><p>Shared company credit available for usage beyond your plan.</p></div></div>'
+      +'<div class="bill-card-body"><div class="dpb-credit-row">'
+      +'<div><div class="dpb-credit-value">'+dpbMoney(74.42)+' <span class="dpb-credit-label">available</span></div><div class="k-sub" style="margin-top:2px">Shared across the company</div><button type="button" class="bx-btn" style="margin-top:10px" data-dact="credit.viewDetails">View credit details</button></div>'
+      +'<div class="dpb-alert-box"><div class="dpb-alert-head"><span class="dpb-alert-ico">!</span><b>$50.00 failed &mdash; retry needed</b></div><p>Your last payment attempt failed on Oct 05, 2026.</p><button type="button" class="bx-btn danger solid" data-dact="credit.retry">Retry payment</button></div>'
+      +'</div></div></div>';
+    const addonsCard='<div class="card"><div class="bill-card-head"><div><h3>Active add-ons <span class="dpb-info-ico" title="Services billed alongside your plan this cycle">&#9432;</span></h3><p>Active add-ons applied to this bill.</p></div><div class="bx-actions"><button type="button" class="bx-btn" data-dact="addons.manage">Manage add-ons</button></div></div>'
+      +'<div class="table-scroll"><table class="bill-table" style="min-width:680px"><thead><tr><th>Add-on</th><th>Description</th><th>Qty</th><th class="num">Unit price</th><th class="num">Subtotal</th><th>Status</th><th></th></tr></thead><tbody>'+addonRows
+      +'<tr><td colspan="4" style="text-align:right;font-weight:650;color:var(--text)">Total add-ons</td><td class="num" style="font-weight:650;color:var(--text)">'+dpbMoney(dpbAddonsTotal())+'</td><td></td><td></td></tr>'
+      +'</tbody></table></div></div>';
+    const paymentCard='<div class="card"><div class="bill-card-head"><div><h3>Payment methods</h3><p>Cards on file for this account.</p></div><div class="bx-actions"><button type="button" class="bx-btn" data-dact="pm.add">+ Add payment method</button></div></div>'
+      +'<div class="table-scroll"><table class="bill-table" style="min-width:460px"><thead><tr><th>Card</th><th>Expires</th><th>Status</th><th style="text-align:right">Actions</th></tr></thead><tbody>'+cardRows+'</tbody></table></div></div>';
+    return overviewCard+'<div class="dpb-grid"><div class="dpb-col-main">'+creditCard+addonsCard+paymentCard+'</div><div class="dpb-col-side">'+dpbSpendTrendCard()+dpbUsageBreakdownCard()+dpbRecentActivityCard()+'</div></div>';
+  }
+  function dpbToolbarRow(){
+    return '<div class="dpb-toolbar-row"><div class="bx-field" style="max-width:220px"><select data-dchg="sum.period"><option>Sep 30 &ndash; Oct 30, 2026</option><option>Aug 30 &ndash; Sep 30, 2026</option></select></div><button type="button" class="bx-btn" data-dact="sum.download">&#8681; Download</button></div>';
+  }
+  function dpbSpendTrendCard(){
+    const data=dpbData.monthlySpend[dpbUi.spendRange];
+    const max=Math.max(...data.map(d=>d[1]));
+    const latest=data[data.length-1][1], prev=data[data.length-2][1];
+    const pct=Math.round(Math.abs(latest-prev)/prev*100), down=latest<prev;
+    const bars='<div style="display:flex;align-items:flex-end;gap:10px;height:120px;padding:8px 2px 0">'
+      +data.map((d,i)=>'<div style="display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;min-width:0"><div style="width:100%;max-width:30px;border-radius:4px 4px 0 0;background:'+(i===data.length-1?'var(--blue)':'var(--blue-100)')+';height:'+Math.round(d[1]/max*90+8)+'px"></div><div style="font-size:10.5px;color:var(--muted)">'+d[0]+'</div></div>').join('')
+      +'</div>';
+    return '<div class="card"><div class="bill-card-head"><div><h3>Monthly spend trend</h3></div><div class="bx-field" style="max-width:150px;margin:0"><select data-dchg="trend.range"><option value="six"'+(dpbUi.spendRange==='six'?' selected':'')+'>Last 6 months</option><option value="three"'+(dpbUi.spendRange==='three'?' selected':'')+'>Last 3 months</option></select></div></div>'
+      +'<div class="bill-card-body" style="padding-top:10px"><div class="k-value" style="font-size:22px">'+dpbMoney(latest)+'</div><div class="dpb-trend '+(down?'good':'bad')+'" style="margin-top:4px">'+(down?'&#8595;':'&#8593;')+' '+pct+'% vs previous period</div>'+bars+'</div></div>';
+  }
+  function dpbUsageBreakdownCard(){
+    const items=dpbData.usageBreakdown;
+    const total=items.reduce((s,i)=>s+i.amount,0);
+    const planTotal=1331.50;
+    const usedPct=Math.round(total/planTotal*100);
+    let acc=0;
+    const stops=items.map(i=>{const from=acc,to=acc+i.amount/total*100;acc=to;return i.color+' '+from.toFixed(2)+'% '+to.toFixed(2)+'%';}).join(',');
+    const legend=items.map(i=>'<div class="dpb-legend-row"><span class="dpb-dot" style="background:'+i.color+'"></span><span class="dpb-legend-label">'+i.label+'</span><span class="dpb-legend-amt">'+dpbMoney(i.amount)+'</span><span class="dpb-legend-pct">'+Math.round(i.amount/total*100)+'%</span></div>').join('');
+    return '<div class="card"><div class="bill-card-head"><div><h3>Usage breakdown</h3><p>This period</p></div><a href="#" data-dact="usage.viewDetailed" onclick="return false" style="font-size:12px;white-space:nowrap">View detailed usage &rarr;</a></div>'
+      +'<div class="bill-card-body"><div class="dpb-donut-wrap"><div class="dpb-donut" style="background:conic-gradient('+stops+')"><div class="dpb-donut-hole"><div class="dpb-donut-pct">'+usedPct+'%</div><div class="dpb-donut-amt">'+dpbMoney(total)+'</div><div class="dpb-donut-sub">of '+dpbMoney(planTotal)+'</div></div></div></div>'+legend+'</div></div>';
+  }
+  function dpbRecentActivityCard(){
+    const rows=dpbData.recentActivity.map(r=>'<tr><td style="white-space:nowrap;color:var(--muted)">'+r[0]+'</td><td>'+r[1]+'</td><td class="num">'+r[2]+'</td><td><span class="badge '+(r[3]==='Completed'?'paid':'failed')+'">'+r[3]+'</span></td></tr>').join('');
+    return '<div class="card"><div class="bill-card-head"><div><h3>Recent billing activity</h3><p>Latest billing-related events.</p></div><a href="#" data-dact="activity.viewAll" onclick="return false" style="font-size:12px;white-space:nowrap">View all &rarr;</a></div>'
+      +'<div class="table-scroll"><table class="bill-table" style="min-width:380px"><thead><tr><th>Date</th><th>Description</th><th class="num">Amount</th><th>Status</th></tr></thead><tbody>'+rows+'</tbody></table></div></div>';
+  }
+  function dpbCreditsUsageTab(){
+    const avail=74.42;
+    const alloc=dpbData.creditAllocation;
+    const allocTotal=alloc.reduce((s,i)=>s+i.amount,0);
+    let acc=0;
+    const allocStops=alloc.map(i=>{const from=acc,to=acc+i.amount/allocTotal*100;acc=to;return i.color+' '+from.toFixed(2)+'% '+to.toFixed(2)+'%';}).join(',');
+    const allocLegend=alloc.map(i=>'<div class="dpb-legend-row"><span class="dpb-dot" style="background:'+i.color+'"></span><span class="dpb-legend-label">'+i.label+'</span><span class="dpb-legend-amt">'+dpbMoney(i.amount)+'</span></div>').join('');
+    const creditDonutCard='<div class="card"><div class="bill-card-head"><div><h3>Credit balance</h3></div></div>'
+      +'<div class="bill-card-body"><div class="dpb-donut-wrap"><div class="dpb-donut" style="background:conic-gradient('+allocStops+')"><div class="dpb-donut-hole"><div class="dpb-donut-pct">'+dpbMoney(avail)+'</div><div class="dpb-donut-sub">of '+dpbMoney(allocTotal)+' limit</div></div></div></div>'+allocLegend+'</div></div>';
+    const items=dpbData.usageBreakdown;
+    const total=items.reduce((s,i)=>s+i.amount,0);
+    let acc2=0;
+    const stops=items.map(i=>{const from=acc2,to=acc2+i.amount/total*100;acc2=to;return i.color+' '+from.toFixed(2)+'% '+to.toFixed(2)+'%';}).join(',');
+    const legend=items.map(i=>'<div class="dpb-legend-row"><span class="dpb-dot" style="background:'+i.color+'"></span><span class="dpb-legend-label">'+i.label+'</span><span class="dpb-legend-amt">'+dpbMoney(i.amount)+'</span><span class="dpb-legend-pct">'+Math.round(i.amount/total*100)+'%</span></div>').join('');
+    const topCatCard='<div class="card"><div class="bill-card-head"><div><h3>Top usage categories</h3></div></div>'
+      +'<div class="bill-card-body"><div class="dpb-donut-wrap"><div class="dpb-donut" style="background:conic-gradient('+stops+')"><div class="dpb-donut-hole"><div class="dpb-donut-pct">'+dpbMoney(total)+'</div><div class="dpb-donut-sub">Total usage</div></div></div></div>'+legend+'</div></div>';
+    const svcRows=items.map(i=>{const pct=Math.round(i.amount/total*100);return '<div style="margin-bottom:12px"><div class="p-row" style="padding:0;border-top:0"><div class="p-l"><b>'+i.label+'</b></div><div class="p-v">'+dpbMoney(i.amount)+'</div></div><div class="usage-bar" style="max-width:none"><div class="usage-bar-fill" style="width:'+pct+'%;background:'+i.color+'"></div></div></div>';}).join('');
+    const userRows=dpbData.topSpenders.map(r=>{const t=r[1]+r[2]+r[3]+r[4];const pct=Math.round(t/total*100);return '<div style="margin-bottom:12px"><div class="p-row" style="padding:0;border-top:0"><div class="p-l"><b>'+r[0]+'</b></div><div class="p-v">'+dpbMoney(t)+'</div></div><div class="usage-bar" style="max-width:none"><div class="usage-bar-fill" style="width:'+pct+'%"></div></div></div>';}).join('');
+    const svcCard='<div class="card"><div class="bill-card-head"><div><h3>Service usage details</h3></div><a href="#" data-dact="usage.viewDetailed" onclick="return false" style="font-size:12px;white-space:nowrap">View all usage &rarr;</a></div>'
+      +'<div class="bill-card-body" style="padding-bottom:0"><div class="dpb-segmented"><button type="button" class="'+(dpbUi.summaryUsageView==='service'?'active':'')+'" data-dact="usage.view" data-v="service">By Service</button><button type="button" class="'+(dpbUi.summaryUsageView==='user'?'active':'')+'" data-dact="usage.view" data-v="user">By User</button></div></div>'
+      +'<div class="bill-card-body" style="padding-top:12px">'+(dpbUi.summaryUsageView==='service'?svcRows:userRows)+'</div></div>';
+    const usageRows=dpbData.recentCreditUsage.map(r=>'<tr><td style="white-space:nowrap;color:var(--muted)">'+r[0]+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td><td>'+r[3]+'</td><td class="num">'+r[4]+'</td></tr>').join('');
+    const recentCard='<div class="card"><div class="bill-card-head"><div><h3>Recent credit usage</h3><p>Latest metered usage charged against your credit.</p></div></div>'
+      +'<div class="table-scroll"><table class="bill-table" style="min-width:480px"><thead><tr><th>Date</th><th>Service</th><th>Description</th><th>Usage</th><th class="num">Amount</th></tr></thead><tbody>'+usageRows+'</tbody></table></div></div>';
+    return '<div class="dpb-grid" style="grid-template-columns:1fr 1fr">'+creditDonutCard+topCatCard+'</div>'
+      +'<div class="dpb-grid" style="margin-top:14px"><div class="dpb-col-main">'+dpbSpendTrendCard().replace('Monthly spend trend','Usage trend')+'</div><div class="dpb-col-side">'+svcCard+'</div></div>'
+      +'<div style="margin-top:14px">'+recentCard+'</div>';
+  }
+  function dpbPaymentMethodsTab(){
+    const dpbBrand=c=>c.brand==='Visa'?'<span class="dpb-brand visa">VISA</span>':'<span class="dpb-brand mc">MC</span>';
+    const cardRows=dpbData.cards.map(c=>'<tr><td class="main-cell"><div style="display:flex;align-items:center;gap:10px">'+dpbBrand(c)+'<b>'+c.brand+' &middot;&middot;&middot;&middot; '+c.last4+'</b></div></td><td>'+c.exp+'</td><td><span class="badge '+(c.role==='default'?'paid':'pending')+'">'+(c.role==='default'?'Default':'Backup')+'</span></td><td style="text-align:right;white-space:nowrap">'
+      +'<a href="#" data-dact="pm.edit" data-id="'+c.id+'" onclick="return false">Edit</a>'
+      +(c.role==='default'?'':' &middot; <a href="#" data-dact="pm.setDefault" data-id="'+c.id+'" onclick="return false">Set default</a>')
+      +' &middot; <a href="#" class="dpb-danger-link" data-dact="pm.remove" data-id="'+c.id+'" onclick="return false">Remove</a></td></tr>').join('');
+    const def=dpbData.cards.find(c=>c.role==='default');
+    const ps=dpbData.paymentSettings;
+    const methodsCard='<div class="card"><div class="bill-card-head"><div><h3>Payment methods</h3><p>Cards on file for this account. These will be used to charge your next bill.</p></div><div class="bx-actions"><button type="button" class="bx-btn primary solid" data-dact="pm.add">+ Add payment method</button></div></div>'
+      +'<div class="table-scroll"><table class="bill-table" style="min-width:460px"><thead><tr><th>Card</th><th>Expires</th><th>Status</th><th style="text-align:right">Actions</th></tr></thead><tbody>'+cardRows+'</tbody></table></div>'
+      +(def?'<div class="bill-card-body" style="padding-top:12px"><div class="notice"><span class="n-ico">&#9432;</span><span>Your default payment method will be charged on <b>31 Oct 2026</b> for the estimated amount of <b>'+dpbMoney(1331.50)+'</b>.</span></div></div>':'');
+    const settingsCard='<div class="card"><div class="bill-card-head"><div><h3>Payment settings</h3></div></div>'
+      +'<div class="p-rows" style="padding:0">'
+      +'<div class="p-row"><div class="p-l"><b>Automatic payments</b><span>Automatically charge the default payment method for monthly bills.</span></div><label class="bx-switch"><input type="checkbox" data-dchg="pay.autoPay"'+(ps.autoPay?' checked':'')+'><span></span></label></div>'
+      +'<div class="p-row"><div class="p-l"><b>Payment failure notifications</b><span>Get notified when a payment fails or requires action.</span></div><label class="bx-switch"><input type="checkbox" data-dchg="pay.failureNotify"'+(ps.failureNotify?' checked':'')+'><span></span></label></div>'
+      +'<div class="p-row" style="align-items:flex-start"><div class="p-l"><b>Invoice delivery</b><span>Send invoices to</span></div><div style="display:flex;flex-direction:column;gap:6px;min-width:200px"><div class="bx-field" style="margin:0"><select data-dchg="pay.delivery"><option'+(ps.delivery==='Email (PDF)'?' selected':'')+'>Email (PDF)</option><option'+(ps.delivery==='Email link'?' selected':'')+'>Email link</option></select></div><div class="bx-field" style="margin:0"><input type="email" value="'+ps.email+'" data-dinp="pay.email"></div></div></div>'
+      +'</div></div>';
+    return '<div class="dpb-grid"><div class="dpb-col-main">'+methodsCard+'</div><div class="dpb-col-side">'+settingsCard+'</div></div>';
+  }
+  function dpbInvoiceStatusCounts(){
+    const paid=dpbData.invoices.filter(i=>i.status==='Paid');
+    const failed=dpbData.invoices.filter(i=>i.status==='Failed');
+    return {total:dpbData.invoices.length,billed:dpbData.invoices.reduce((s,i)=>s+i.amount,0),paid:paid.reduce((s,i)=>s+i.amount,0),outstanding:failed.reduce((s,i)=>s+i.amount,0)};
+  }
+  function dpbFilteredInvoices(){
+    const f=dpbUi.inv, q=f.q.toLowerCase();
+    return dpbData.invoices.filter(i=>
+      (f.status==='all'||i.status===f.status)
+      && (f.pm==='all'||i.pm.indexOf(f.pm)===0)
+      && (!q||i.num.toLowerCase().includes(q))
+      && (!f.from||i.date>=f.from)
+      && (!f.to||i.date<=f.to)
+    );
+  }
+  function dpbInvoiceHistoryTab(){
+    const c=dpbInvoiceStatusCounts();
+    const kpis='<div class="card"><div class="bill-card-body"><div class="kpis">'
+      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-blue"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 2v4M16 2v4M4 10h16"/></svg></div><div class="kpi-text"><div class="k-label">TOTAL INVOICES</div><div class="k-value">'+c.total+' <span class="dpb-trend good">&#8593; 20%</span></div></div></div><div class="k-sub">vs last period</div></div>'
+      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-green"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div><div class="kpi-text"><div class="k-label">TOTAL BILLED</div><div class="k-value">'+dpbMoney(c.billed)+' <span class="dpb-trend good">&#8593; 12%</span></div></div></div><div class="k-sub">vs last period</div></div>'
+      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-purple"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div><div class="kpi-text"><div class="k-label">PAID AMOUNT</div><div class="k-value">'+dpbMoney(c.paid)+' <span class="dpb-trend good">&#8593; 18%</span></div></div></div><div class="k-sub">vs last period</div></div>'
+      +'<div class="kpi"><div class="kpi-top"><div class="kpi-icon i-orange"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div><div class="kpi-text"><div class="k-label">OUTSTANDING</div><div class="k-value">'+dpbMoney(c.outstanding)+' <span class="dpb-trend good">&#8595; 42%</span></div></div></div><div class="k-sub">vs last period</div></div>'
+      +'</div></div></div>';
+    const f=dpbUi.inv;
+    const pmOptions=['all',...new Set(dpbData.cards.map(cd=>cd.brand))];
+    const filterRow='<div class="dpb-filter-row">'
+      +'<div class="bx-field" style="max-width:150px"><select data-dchg="inv.status"><option value="all">All statuses</option><option value="Paid"'+(f.status==='Paid'?' selected':'')+'>Paid</option><option value="Failed"'+(f.status==='Failed'?' selected':'')+'>Failed</option></select></div>'
+      +'<div class="bx-field" style="max-width:170px"><select data-dchg="inv.pm">'+pmOptions.map(p=>'<option value="'+p+'"'+(f.pm===p?' selected':'')+'>'+(p==='all'?'All payment methods':p)+'</option>').join('')+'</select></div>'
+      +'<div class="bx-field" style="max-width:220px"><input type="text" placeholder="Search invoices..." value="'+dpbEsc(f.q)+'" data-dinp="inv.q"></div>'
+      +'<div class="bx-field" style="max-width:150px"><input type="date" data-dchg="inv.from" value="'+f.from+'"></div>'
+      +'<div class="bx-field" style="max-width:150px"><input type="date" data-dchg="inv.to" value="'+f.to+'"></div>'
+      +'<button type="button" class="bx-btn" data-dact="inv.clear">Clear filters</button>'
+      +'<button type="button" class="bx-btn" style="margin-left:auto" data-dact="inv.export">&#8681; Export</button>'
+      +'</div>';
+    const all=dpbFilteredInvoices();
+    const page=Math.min(f.page,Math.max(1,Math.ceil(all.length/dpbInvPageSize)));
+    const pageRows=all.slice((page-1)*dpbInvPageSize,page*dpbInvPageSize);
+    const rows=pageRows.map(i=>'<tr><td>'+i.num+'</td><td>'+i.date+'</td><td>'+i.period+'</td><td class="num">'+dpbMoney(i.amount)+'</td><td><span class="badge '+(i.status==='Paid'?'paid':'failed')+'">'+i.status+'</span></td><td>'+i.pm+'</td><td style="text-align:right;white-space:nowrap">'
+      +'<a href="#" data-dact="inv.download" data-num="'+i.num+'" onclick="return false">&#8681; Download</a>'
+      +(i.status==='Failed'?' &middot; <a href="#" data-dact="inv.pay" data-num="'+i.num+'" onclick="return false">View &amp; Pay</a>':'')
+      +'</td></tr>').join('');
+    const totalPages=Math.max(1,Math.ceil(all.length/dpbInvPageSize));
+    const pager='<div class="inv-pager"><div class="inv-pager-info">Showing '+pageRows.length+' of '+all.length+' invoices</div><div class="inv-pager-controls"><div class="inv-pages">'
+      +Array.from({length:totalPages},(_,i)=>'<button type="button" class="'+(page===i+1?'on':'')+'" data-dact="inv.page" data-p="'+(i+1)+'">'+(i+1)+'</button>').join('')
+      +'</div></div></div>';
+    return '<div style="margin-bottom:14px">'+kpis+'</div>'
+      +'<div class="card">'+filterRow
+      +'<div class="table-scroll"><table class="bill-table" style="min-width:760px"><thead><tr><th>Invoice #</th><th>Date</th><th>Period</th><th class="num">Amount</th><th>Status</th><th>Payment method</th><th style="text-align:right">Actions</th></tr></thead><tbody>'
+      +(rows||'<tr><td colspan="7" style="text-align:center;color:var(--muted);padding:28px">No invoices match the current filters.</td></tr>')
       +'</tbody></table></div>'
-      +'<div class="bill-card-head" style="border-top:1px solid var(--line)"><div><h3>Payment methods</h3><p>Cards on file for this account.</p></div><div class="bx-actions"><button type="button" class="bx-btn" data-dact="pm.add">+ Add payment method</button></div></div>'
-      +'<div class="table-scroll"><table class="bill-table" style="min-width:420px"><thead><tr><th>Card</th><th>Expires</th><th>Status</th><th>Actions</th></tr></thead><tbody>'+cardRows+'</tbody></table></div>';
+      +pager+'</div>';
   }
   function dpbWalletCard(w){
     const pct=Math.min(100,Math.round((w.balance/w.cap)*100));
@@ -1588,7 +1840,7 @@
       +'<div class="bill-card-body">'+policies+'</div>';
   }
   const DIALPAD_BILLING_PAGES={
-    'Billing Summary':()=>'<div class="card">'+dpbSummaryBody()+'</div>',
+    'Billing Summary':()=>dpbSummaryBody(),
     'Credits and Usage':()=>'<div class="card">'+dpbCreditsBody()+'</div>',
     'Credit Analytics':()=>'<div class="card">'+dpbAnalyticsBody()+'</div>',
     'Manage Licenses':()=>'<div class="card">'+dpbLicensesBody()+'</div>',
@@ -1616,13 +1868,70 @@
     }
   };
   let dpbCurrentLabel='Billing Summary';
+  const DPB_SUMMARY_TITLES={current:['Billing Summary','Review your upcoming charge, billing cycle, and account overview.'],credits:['Credits & Usage','Review available credits, usage breakdown, and spending trends.'],payment:['Payment Methods','Manage saved cards and billing preferences for this account.'],history:['Invoice History','Search, filter, and review past invoices and payments.']};
   function dpbRender(){
     const page=DIALPAD_BILLING_PAGES[dpbCurrentLabel]||DIALPAD_BILLING_PAGES['Billing Summary'];
     document.getElementById('dpbBody').innerHTML=page();
+    const actsEl=document.getElementById('dpbHeadActs');
+    const tabsEl=document.getElementById('dpbTabs');
+    if(dpbCurrentLabel==='Billing Summary'){
+      const t=DPB_SUMMARY_TITLES[dpbUi.tab.summary]||DPB_SUMMARY_TITLES.current;
+      const titleEl=document.getElementById('dpbTitle'), blurbEl=document.getElementById('dpbBlurb');
+      if(titleEl) titleEl.textContent=t[0];
+      if(blurbEl) blurbEl.textContent=t[1];
+      if(actsEl) actsEl.innerHTML=dpbUi.tab.summary==='current'?dpbToolbarRow():'';
+      if(tabsEl){ tabsEl.style.display=''; tabsEl.innerHTML=dpbSummaryTabsHtml(); }
+    } else {
+      if(actsEl) actsEl.innerHTML='';
+      if(tabsEl){ tabsEl.style.display='none'; tabsEl.innerHTML=''; }
+    }
   }
   const DACT={
     'sum.tab':(a)=>{dpbUi.tab.summary=a.dataset.v;dpbRender();},
     'sum.pdf':()=>dpbToast('Invoice PDF would open here'),
+    'sum.download':()=>dpbToast('Billing summary PDF would download here'),
+    'credit.viewDetails':()=>showDialpadBilling('Credits and Usage'),
+    'credit.retry':()=>dpbToast('Payment retry initiated — you will be notified once it completes','ok'),
+    'addons.manage':()=>showDialpadBilling('Add-Ons'),
+    'ao.menu':(a)=>{dpbUi.addonMenuOpen=dpbUi.addonMenuOpen===a.dataset.name?null:a.dataset.name;dpbRender();},
+    'ao.manage':(a)=>{dpbUi.addonMenuOpen=null;dpbRender();dpbToast('Managing '+a.dataset.name+'…');},
+    'ao.remove':(a)=>{
+      const name=a.dataset.name;
+      dpbUi.addonMenuOpen=null;
+      dpbModal({title:'Remove add-on?',sub:name+' will stop renewing and be removed from this bill.',
+        footer:'<button type="button" class="bx-btn" data-dact="no">Cancel</button><button type="button" class="bx-btn danger solid" data-dact="yes">Remove add-on</button>',
+        acts:{no:(b,close)=>close(),yes:(b,close)=>{
+          dpbData.addons=dpbData.addons.filter(x=>x.name!==name);
+          close();dpbRender();dpbToast('Add-on removed','ok');
+        }}});
+    },
+    'pm.edit':(a)=>{
+      const c=dpbData.cards.find(x=>x.id===a.dataset.id); if(!c) return;
+      dpbModal({title:'Edit payment method',sub:c.brand+' &middot;&middot;&middot;&middot; '+c.last4,
+        body:'<div class="bx-form"><div class="bx-field full"><label for="dpbEditExp">Expiry</label><input type="text" value="'+c.exp+'" id="dpbEditExp"></div></div>',
+        footer:'<button type="button" class="bx-btn" data-dact="no">Cancel</button><button type="button" class="bx-btn primary solid" data-dact="yes">Save</button>',
+        acts:{no:(b,close)=>close(),yes:(b,close)=>{
+          c.exp=(document.getElementById('dpbEditExp')||{}).value||c.exp;
+          close();dpbRender();dpbToast('Payment method updated','ok');
+        }}});
+    },
+    'usage.viewDetailed':()=>{dpbUi.tab.credits='usage';showDialpadBilling('Credits and Usage');},
+    'activity.viewAll':()=>showDialpadBilling('Changelog'),
+    'usage.view':(a)=>{dpbUi.summaryUsageView=a.dataset.v;dpbRender();},
+    'inv.clear':()=>{dpbUi.inv={q:'',status:'all',pm:'all',from:'',to:'',page:1};dpbRender();},
+    'inv.export':()=>dpbToast('Invoices exported to CSV','ok'),
+    'inv.download':(a)=>dpbToast('Downloading '+a.dataset.num+'…'),
+    'inv.pay':(a)=>{
+      const inv=dpbData.invoices.find(i=>i.num===a.dataset.num); if(!inv) return;
+      dpbModal({title:'Pay '+inv.num,sub:'Retry this failed invoice using '+inv.pm+'.',
+        body:'<div class="p-rows" style="padding:0"><div class="p-row"><div class="p-l">Amount due</div><div class="p-v">'+dpbMoney(inv.amount)+'</div></div><div class="p-row"><div class="p-l">Billing period</div><div class="p-v">'+inv.period+'</div></div></div>',
+        footer:'<button type="button" class="bx-btn" data-dact="no">Cancel</button><button type="button" class="bx-btn primary solid" data-dact="yes">Pay '+dpbMoney(inv.amount)+'</button>',
+        acts:{no:(b,close)=>close(),yes:(b,close)=>{
+          inv.status='Paid';
+          close();dpbRender();dpbToast('Payment submitted for '+inv.num,'ok');
+        }}});
+    },
+    'inv.page':(a)=>{dpbUi.inv.page=+a.dataset.p;dpbRender();},
     'cred.tab':(a)=>{dpbUi.tab.credits=a.dataset.v;dpbRender();},
     'pm.setDefault':(a)=>{dpbData.cards.forEach(c=>c.role=c.id===a.dataset.id?'default':'backup');dpbRender();dpbToast('Default payment method updated','ok');},
     'pm.remove':(a)=>{
@@ -1779,7 +2088,7 @@
       });
     }
   };
-  const dpbBodyEl=document.getElementById('dpbBody');
+  const dpbBodyEl=document.getElementById('dialpadBillingView');
   dpbBodyEl.addEventListener('click',e=>{
     const a=e.target.closest('[data-dact]'); if(!a) return;
     const h=DACT[a.dataset.dact]; if(h){e.preventDefault();h(a,e);}
@@ -1791,9 +2100,24 @@
       const i=+t.dataset.i, v=Math.max(0,Math.min(dpbData.licensePool.total,+t.value||0));
       dpbData.licensePool.offices[i].seats=v;
     }
+    else if(t.dataset.dinp==='inv.q'){dpbUi.inv.q=t.value;dpbUi.inv.page=1;dpbRender();const f=document.querySelector('[data-dinp="inv.q"]'); if(f){f.focus();f.selectionStart=f.selectionEnd=f.value.length;}}
+    else if(t.dataset.dinp==='pay.email'){dpbData.paymentSettings.email=t.value;}
   });
   dpbBodyEl.addEventListener('change',e=>{
-    const t=e.target; if(t.dataset && t.dataset.dchg==='hist.type'){dpbUi.usageType=t.value;dpbRender();}
+    const t=e.target; if(!t.dataset) return;
+    if(t.dataset.dchg==='hist.type'){dpbUi.usageType=t.value;dpbRender();}
+    else if(t.dataset.dchg==='trend.range'){dpbUi.spendRange=t.value;dpbRender();}
+    else if(t.dataset.dchg==='sum.period'){dpbToast('Switched to '+t.value);}
+    else if(t.dataset.dchg==='inv.status'){dpbUi.inv.status=t.value;dpbUi.inv.page=1;dpbRender();}
+    else if(t.dataset.dchg==='inv.pm'){dpbUi.inv.pm=t.value;dpbUi.inv.page=1;dpbRender();}
+    else if(t.dataset.dchg==='inv.from'){dpbUi.inv.from=t.value;dpbUi.inv.page=1;dpbRender();}
+    else if(t.dataset.dchg==='inv.to'){dpbUi.inv.to=t.value;dpbUi.inv.page=1;dpbRender();}
+    else if(t.dataset.dchg==='pay.autoPay'){dpbData.paymentSettings.autoPay=t.checked;dpbToast('Automatic payments '+(t.checked?'enabled':'disabled'),'ok');}
+    else if(t.dataset.dchg==='pay.failureNotify'){dpbData.paymentSettings.failureNotify=t.checked;dpbToast('Payment failure notifications '+(t.checked?'enabled':'disabled'),'ok');}
+    else if(t.dataset.dchg==='pay.delivery'){dpbData.paymentSettings.delivery=t.value;dpbToast('Invoice delivery method updated','ok');}
+  });
+  document.addEventListener('click',e=>{
+    if(dpbUi.addonMenuOpen && !e.target.closest('.dpb-menu-wrap')){dpbUi.addonMenuOpen=null;dpbRender();}
   });
   function showDialpadBilling(label){
     const item=document.getElementById('dialpadBillingItem');
