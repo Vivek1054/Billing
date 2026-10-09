@@ -1615,14 +1615,15 @@
     const ps=dpbData.paymentSettings;
     const methodsCard='<div class="card"><div class="bill-card-head"><div><h3>Payment methods</h3><p>Cards on file for this account. These will be used to charge your next bill.</p></div><div class="bx-actions"><button type="button" class="bx-btn primary solid" data-dact="pm.add">+ Add payment method</button></div></div>'
       +'<div class="table-scroll"><table class="bill-table" style="min-width:460px"><thead><tr><th>Card</th><th>Expires</th><th>Status</th><th style="text-align:right">Actions</th></tr></thead><tbody>'+cardRows+'</tbody></table></div>'
-      +(def?'<div class="bill-card-body" style="padding-top:12px"><div class="notice"><span class="n-ico">&#9432;</span><span>Your default payment method will be charged on <b>31 Oct 2026</b> for the estimated amount of <b>'+dpbMoney(1331.50)+'</b>.</span></div></div>':'');
+      +(def?'<div class="bill-card-body" style="padding-top:12px"><div class="notice"><span class="n-ico">&#9432;</span><span>Your default payment method will be charged on <b>31 Oct 2026</b> for the estimated amount of <b>'+dpbMoney(1331.50)+'</b>.</span></div></div>':'')
+      +'</div>';
     const settingsCard='<div class="card"><div class="bill-card-head"><div><h3>Payment settings</h3></div></div>'
       +'<div class="p-rows" style="padding:0">'
       +'<div class="p-row"><div class="p-l"><b>Automatic payments</b><span>Automatically charge the default payment method for monthly bills.</span></div><label class="bx-switch"><input type="checkbox" data-dchg="pay.autoPay"'+(ps.autoPay?' checked':'')+'><span></span></label></div>'
       +'<div class="p-row"><div class="p-l"><b>Payment failure notifications</b><span>Get notified when a payment fails or requires action.</span></div><label class="bx-switch"><input type="checkbox" data-dchg="pay.failureNotify"'+(ps.failureNotify?' checked':'')+'><span></span></label></div>'
-      +'<div class="p-row" style="align-items:flex-start"><div class="p-l"><b>Invoice delivery</b><span>Send invoices to</span></div><div style="display:flex;flex-direction:column;gap:6px;min-width:200px"><div class="bx-field" style="margin:0"><select data-dchg="pay.delivery"><option'+(ps.delivery==='Email (PDF)'?' selected':'')+'>Email (PDF)</option><option'+(ps.delivery==='Email link'?' selected':'')+'>Email link</option></select></div><div class="bx-field" style="margin:0"><input type="email" value="'+ps.email+'" data-dinp="pay.email"></div></div></div>'
+      +'<div class="p-row" style="align-items:flex-start;flex-wrap:wrap"><div class="p-l"><b>Invoice delivery</b><span>Send invoices to</span></div><div style="display:flex;gap:10px;flex-wrap:wrap;flex:1;min-width:260px;justify-content:flex-end"><div class="bx-field" style="margin:0;width:160px"><select data-dchg="pay.delivery"><option'+(ps.delivery==='Email (PDF)'?' selected':'')+'>Email (PDF)</option><option'+(ps.delivery==='Email link'?' selected':'')+'>Email link</option></select></div><div class="bx-field" style="margin:0;flex:1;min-width:200px"><input type="email" value="'+ps.email+'" data-dinp="pay.email"></div></div></div>'
       +'</div></div>';
-    return '<div class="dpb-grid"><div class="dpb-col-main">'+methodsCard+'</div><div class="dpb-col-side">'+settingsCard+'</div></div>';
+    return methodsCard+settingsCard;
   }
   function dpbInvoiceStatusCounts(){
     const paid=dpbData.invoices.filter(i=>i.status==='Paid');
